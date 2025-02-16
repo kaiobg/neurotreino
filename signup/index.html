@@ -44,30 +44,37 @@
                         <option value="nao-falx">Prefiro não dizer</option>
                     </select>
                     
-                    <label for="occupation">Modalidade esportiva principal:</label>
+                    <label for="modality">Modalidade esportiva principal:</label>
                     <select id="modality" name="modality" required>
                         <option value="" disabled selected>Selecione</option>
                         <option value="Atletismo">Atletismo</option>
                         <option value="Badminton">Badminton</option>
                         <option value="Basquete">Basquete</option>
-                        <option value="Basquete">Beach Tênis</option>
+                        <option value="Beach">Beach Tênis</option>
+                        <option value="Cricket">Cricket</option>
+                        <option value="Esgrima">Esgrima</option>
                         <option value="Sports">E-Sports</option>
                         <option value="Futebol">Futebol</option>
-                        <option value="Futebol">Futebol de 5</option>
+                        <option value="Futebol5">Futebol de 5</option>
+                        <option value="Futsal">Futsal</option>
                         <option value="Ginástica">Ginástica</option>
                         <option value="Ginástica">Goalball</option>
                         <option value="Handebol">Handebol</option>
                         <option value="Lutas">Lutas diversas</option>
                         <option value="Nado">Natação</option>
                         <option value="Rugby">Rugby</option>
+                        <option value="Surfe">Surfe</option>
+                        <option value="Skate">Skate</option>
                         <option value="Tenis">Tênis</option>
                         <option value="Mesa">Tênis de mesa</option>
                         <option value="volei">Vôlei</option>
                         <option value="praia">Vôlei de praia</option>
                         <option value="Xadrez">Xadrez</option>
                         <option value="outros">Outra modalidade</option>
-                        
                     </select>
+
+                    <label for="other-modality" id="other-modality-label" class="display-none">Qual?</label>
+                    <input type="text" name="other-modality" id="other-modality-input" class="display-none" />
                     
                     <label for="experience">Tempo de Experiência como treinador (a) nesta modalidade:</label>
                     <select id="experience" name="experience" required>
@@ -87,6 +94,7 @@
                         <option value="em">Ensino médio completo</option>
                         <option value="gradc">Graduação em Educação Física completo</option>
                         <option value="gradin">Graduação em Educação Física incompleto</option>
+                        <option value="gradoutra">Graduação em outra área</option>
                         <option value="esp">Especialização completa</option>
                         <option value="mest">Mestrado completo</option>
                         <option value="doc">Doutorado completo</option>
