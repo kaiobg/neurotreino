@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <title>Painel do Treinador</title>
+    <title data-i18n="coachPage.tituloSite"></title>
 
     <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
     
@@ -15,7 +15,10 @@
 <body data-redirect-if-not-logged-in>
     
     <header>
-        <h1>Bem Vindo(a), <span id="coach-name"></span></h1>
+        <h1>
+            <span data-i18n="coachPage.bemVindo"></span>
+            <span id="coach-name"></span>
+        </h1>
         <div class="cabecalho">
             <nav class="cabecalho_menu">
                 <button id="logout-btn">Sair</button>    
@@ -96,16 +99,9 @@
         <h2 class="coach-mentoria">Como melhorar os resultados do seu Neurotreino</h2>
         
         <div class="bt-container">
-            
-            
-                <button onclick="alert('Esta função estará disponível em abril. Aguarde!')">Atitude</button>
-           
-            
-                <button onclick="alert('Esta função estará disponível em abril. Aguarde!')">Relação Interpessoal</button>
-           
-            
-                <button onclick="alert('Esta função estará disponível em abril. Aguarde!')">Regulação Emocional</button>
-            
+            <button onclick="alert(getI18nMessage('coachPage.estaFuncaoEstaraDisponivelEmBreveAguarde'))">Atitude</button>
+            <button onclick="alert(getI18nMessage('coachPage.estaFuncaoEstaraDisponivelEmBreveAguarde'))">Relação Interpessoal</button>
+            <button onclick="alert(getI18nMessage('coachPage.estaFuncaoEstaraDisponivelEmBreveAguarde'))">Regulação Emocional</button>
         </div>
     </section>
     <footer>
