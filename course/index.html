@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Login</title>
+
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+    
+    <link rel="stylesheet" href="course.css" />
+    
+    <script type="module" src="course.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Modelo de Habilidades Fundamentais do Treinador</h1>
+    </header>
+
+    <div class="container">
+        <div class="main">
+            
+            
+            <section id="highlights" class="post">
+                <h2>Comunicação</h2>
+                <div class="highlight-box">
+                    <div class="highlight sqr1">
+                        <h3>Conhecimento Avançado</h3>
+                        <p>Oferecemos uma análise detalhada de suas Habilidades Fundamentais de forma gratuita. Basta responder os questionários.</p>
+                    </div>
+                    <div class="highlight sqr1">
+                        <h3 >Estratégias Práticas</h3>
+                        <p>Fornecemos as principais sugestões para melhorar possíveis defasagens, para se tornar um profissional ainda melhor.</p>
+                    </div>
+                    <div class="highlight sqr1">
+                        <h3 >Apoio Profissional</h3>
+                        <p>Ao participar da pesquisa, você estará em contato com profissionais que possam tirar suas dúvidas.</p>
+                    </div>
+                    <div class="highlight sqr1">
+                        <h3 >Protótipo da ciência</h3>
+                        <p>Importante lembrar que esta ferramenta está em processo de validação estatística.</p>
+                    </div>
+                </div>
+            </section>
+      
+            </section>
+            <section  class="post">
+                <h2>Importante</h2>
+                <p>O Modelo de Habilidades Fundamentais do Treinador é um projeto embasado científicamente atravéz de um projeto de doutorado. 
+                    Portanto, conto com sua seriedade e ética em responder o questionário.</p>
+              </section>
+        </div>
+
+        <div class="sidebar">
+            <div class="box">
+                <h2>Acesse sua conta</h2>
+                <p>Você já sabe quais seus atributos psicológicos como treinador(a)?</p>
+                <div class="bt-container">
+                    <a href="/login/">
+                        <button>Entre na sua conta</button>
+                    </a>
+                    <a href="/signup/">
+                        <button>Crie uma conta</button>
+                    </a>
+                </div>
+            </div>
+              
+            <section  class="box">
+                <h2>O que é o Modelo de Habilidades Fundamentais do Treinador</h2>
+                <div class="video-container">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="imgs/Neurotreino.mp4" 
+                        title="YouTube video player" 
+                        
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+            <section  class="box">
+              <h2>Por que este Projeto é importante?</h2>
+              <p>Você já se deparou com muitas pesquisas focadas no treinador ou treinadora? Eu aposto que não. 
+                Os(as) treinadores(as) desempenham um papel central no desenvolvimento dos atletas e alunos, 
+                tanto tecnicamente quanto mentalmente. 
+                Ao entender as Habilidades Fundamentais, este projeto contribui diretamente para a melhoria do profissional,
+                da performance do atletas e todos os envolvidos com o esporte.</p>        
+            </section>
+
+             <section class="box">
+            <h2>Principais dúvidas</h2>
+            <div class="highlight-box">
+                <div class="highlight sqr1">
+                    <h3>Quanto tempo demora?</h3>
+                    <p>Cerca de 5 minutos para responder os três questionários.</p>
+                </div>
+                <div class="highlight sqr1">
+                    <h3>Quando sai o resultado?</h3>
+                    <p>O resultado aparece na hora, basta finalizar todos os questionários.</p>
+                </div>
+                <div class="highlight sqr1">
+                    <h3>Posso fazer mais de uma vez?</h3>
+                    <p>Você poderá refazer os testes a cada 3 meses.</p>
+                </div>
+                <div class="highlight sqr1">
+                  <h3>Para que eu uso os resultados?</h3>
+                  <p>Com o resultado, você poderá treinar os pontos que julgar necessário para crescer como treinador(a).
+                  </p>
+              </div>
+            </div>
+        </section>
+
+            <div class="box display-none">
+                <h3>Total de Treinadores (as) Cadastrados</h3>
+                <p id="user-counter">Carregando...</p>
+            </div>
+            <script>
+                // Simulação de contagem de usuários
+                const userCounter = document.getElementById('user-counter');
+                // Esta contagem deve ser substituída pelo valor dinâmico vindo do backend
+                const fakeUserCount = 12071993; 
+            
+                // Exibindo o valor no contador
+                userCounter.textContent = fakeUserCount + " usuários registrados!";
+            </script>
+        </div>
+    </div>
+    <footer>
+        <p class="center"> Modelo de Habilidades Fundamentais do Treinador | Desenvolvido por Kaio Guerrero</p>
+    </footer>
+</body>
+</html>

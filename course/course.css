@@ -420,9 +420,98 @@ button:hover {
   
 }
 
-/*!********************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/login.css ***!
-  \********************************************************************/
+/*!*******************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/home.css ***!
+  \*******************************************************************/
+/* Imagens lado a lado na seção "Sobre o Projeto" */
+.images {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espaçamento entre as imagens */
+    margin-top: 20px;
+}
+
+.images img {
+    width: 48%; /* Cada imagem ocupa quase metade do container */
+    border-radius: 5px; /* Bordas arredondadas para estilo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+}
+.bt-contato a button {
+    background-color: #f3f4f6;
+    color: #534200;
+    border: 2px solid #534200;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .bt-contato a button:hover {
+    background-color: #534200;
+    color: white;
+  }
+  .bt-contato {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+.sqr1{
+    background-color: #f3f4f6;
+}
+        
+        /* Estilo para alinhar caixas lado a lado */
+.highlight-box {
+    display: flex;        /* Coloca os itens lado a lado */
+    flex-wrap: wrap;      /* Permite que as caixas se ajustem em várias linhas, se necessário */
+    gap: 16px;            /* Espaçamento entre as caixas */
+    justify-content: space-evenly; /* Espaço uniforme entre caixas */
+  }
+  
+  .highlight {
+    flex: 1;             /* Faz cada caixa crescer igualmente */
+    min-width: 250px;    /* Define uma largura mínima para manter a legibilidade */
+    max-width: 300px;    /* Limita a largura máxima de cada caixa */
+    padding: 10px;       /* Espaçamento interno */
+    border: 1px solid #ccc;
+    border-radius: 8px;  /* Cantos arredondados para um visual moderno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Leve sombra */
+    
+  }
+
+  .video-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f9; /* Cor de fundo suave */
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+   
+}
+ 
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/course.css ***!
+  \*********************************************************************/
 
 
-/*# sourceMappingURL=reset-password.css.map*/
+/*# sourceMappingURL=course.css.map*/

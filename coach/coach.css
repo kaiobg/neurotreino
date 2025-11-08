@@ -1,3 +1,6 @@
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/global.css ***!
+  \*********************************************************************/
 /* DO NOT REMOVE THIS STYLE */
 .display-none { 
   display: none;
@@ -417,6 +420,9 @@ button:hover {
   
 }
 
+/*!********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/coach.css ***!
+  \********************************************************************/
 #interface{
     padding: 10px;
     color: aliceblue;
@@ -433,3 +439,5 @@ button:hover {
   color: black;
 }
 
+
+/*# sourceMappingURL=coach.css.map*/
