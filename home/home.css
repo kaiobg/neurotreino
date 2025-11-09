@@ -1,3 +1,6 @@
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/global.css ***!
+  \*********************************************************************/
 /* DO NOT REMOVE THIS STYLE */
 .display-none { 
   display: none;
@@ -429,6 +432,9 @@ button:disabled {
   
 }
 
+/*!*******************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/home.css ***!
+  \*******************************************************************/
 /* Imagens lado a lado na seção "Sobre o Projeto" */
 .images {
     display: flex;
@@ -517,3 +523,5 @@ iframe {
    
 }
  
+
+/*# sourceMappingURL=home.css.map*/
