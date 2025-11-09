@@ -118,7 +118,7 @@ footer {
   text-decoration: none; 
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .cabecalho_link:hover {
     background-color: #ffffff;
     border-radius: 2px;
@@ -189,7 +189,7 @@ button:disabled {
   cursor: auto;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   button:hover {
     background-color: #ffffff; /* cor mais escura no hover */
     color:#0b0b0b;
@@ -215,7 +215,7 @@ button:disabled {
   transition: 0.3s;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .bt-container a button:hover {
     background-color: #ffffff;
     color: black;
@@ -298,7 +298,7 @@ button:disabled {
   transition: all 0.3s ease;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .sidebar .box ul li button:hover {
     background-color: #534200;
     color: white;
@@ -380,7 +380,7 @@ button:disabled {
   margin-top: 10px;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   #identification-form button:hover {
     background-color: #218838;
   }
