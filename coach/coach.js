@@ -37918,6 +37918,75 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /***/ }),
 
+/***/ "./i18n/locales/en.js":
+/*!****************************!*\
+  !*** ./i18n/locales/en.js ***!
+  \****************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var en = {
+  coachPage: {
+    tituloSite: 'Painel do Treinador',
+    bemVindo: 'Bem-vindo(a), ',
+    estaFuncaoEstaraDisponivelEmBreveAguarde: 'Esta função estará disponível em abril. Aguarde!'
+  },
+  mainPage: {
+    tituloGeral: 'Coach Fundamental Skills Model',
+    modeloGeral: 'Coach Fundamental Skills Model',
+    intro1: 'Want to help science and discover your Fundamental Skills for free?! ',
+    intro1explicacao: 'This doctoral project investigates the core skills present in coaches. By registering and completing the questionnaires, you will know your levels in three different areas (Management and Decision-Making, Psychological Skills, and Well-being and Interpersonal Relationships). Later, you can receive improvement tips and expert support to answer your questions. All for free.',
+    intro2: 'What will we collect?!',
+    intro3: 'Project Benefits ',
+    intro3titulo1: 'Advanced Knowledge ',
+    intro3explicacao1: ' We offer a detailed analysis of your Fundamental Skills for free. Just answer the questionnaires. ',
+    intro3titulo2: 'Practical Strategies ',
+    intro3explicacao2: 'We provide key suggestions to improve potential gaps, helping you become an even better professional. ',
+    intro3titulo3: 'Professional Support ',
+    intro3explicacao3: 'By participating in the research, you will be in contact with professionals who can answer your questions. ',
+    intro3titulo4: 'Scientific Prototype',
+    intro3explicacao4: 'Important to remember that this tool is in the process of statistical validation. ',
+    intro4: 'Important ',
+    intro4explicacao1: 'The Model is a scientifically based project through a doctoral study. Therefore, I count on your seriousness and ethics in answering the questionnaire. ',
+    intro5: 'Access your account',
+    intro5explicacao1: 'Do you already know your psychological skills as a coach?',
+    intro5botao1: 'Log in to your account',
+    intro5botao2: 'Create an account',
+    intro6: 'What is the Coach Fundamental Skills Model? ',
+    intro7: 'Why is this project important?',
+    intro7explicacao1: 'Have you come across many research studies focused on coaches? I bet not. Coaches play a central role in the development of athletes and students, both technically and mentally. By understanding Fundamental Skills, this project directly contributes to professional improvement, athlete performance, and everyone involved in sports.',
+    intro8: 'Asked Questions ',
+    intro8titulo1: 'How long does it take? ',
+    intro8explicacao1: ' About 5 minutes to answer the three questionnaires.',
+    intro8titulo2: 'When do the results appears?',
+    intro8explicacao2: 'The result appears instantly; just finish all the questionnaires. ',
+    intro8titulo3: 'Can I do it more than once? ',
+    intro8explicacao3: 'You can retake the tests every 3 months. ',
+    intro8titulo4: 'What do I use the results for? ',
+    intro8explicacao4: 'With the results, you can train the points you deem necessary to grow as a coach. ',
+    footer: 'Coach Fundamental Skills Model | Developed by Kaio Guerrero '
+  },
+  loginPage: {
+    tituloLogin: 'Login',
+    modeloGeral: 'Modelo de Habilidades Fundamentais do Treinador ',
+    cabecalho1: 'Início',
+    cabecalho2: 'Crie sua conta',
+    tituloCabecalho: 'Acesse sua conta',
+    campoEmail: 'E-mail:',
+    campoSenha: 'Senha:',
+    esqueciSenha: 'Esqueci minha senha',
+    entrar: 'Entrar',
+    footer: 'Modelo de Habilidades Fundamentais do Treinador | Desenvolvido por Kaio Guerrero'
+  }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (en);
+
+/***/ }),
+
 /***/ "./i18n/locales/es.js":
 /*!****************************!*\
   !*** ./i18n/locales/es.js ***!
@@ -37961,13 +38030,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _pt__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pt */ "./i18n/locales/pt.js");
 /* harmony import */ var _es__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./es */ "./i18n/locales/es.js");
+/* harmony import */ var _en__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./en */ "./i18n/locales/en.js");
+/* harmony import */ var _tr__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tr */ "./i18n/locales/tr.js");
 
 
-var availableLocales = ['pt', 'es'];
+
+
+var availableLocales = ['pt', 'es', 'en', 'tr'];
 var defaultLanguage = 'pt';
 var locales = {
   pt: _pt__WEBPACK_IMPORTED_MODULE_0__["default"],
-  es: _es__WEBPACK_IMPORTED_MODULE_1__["default"]
+  es: _es__WEBPACK_IMPORTED_MODULE_1__["default"],
+  en: _en__WEBPACK_IMPORTED_MODULE_2__["default"],
+  tr: _tr__WEBPACK_IMPORTED_MODULE_3__["default"]
 };
 
 
@@ -37994,10 +38069,120 @@ var pt = {
     tituloGeral: 'Modelo de Habilidades Fundamentais do Treinador',
     modeloGeral: 'Modelo de Habilidades Fundamentais do Treinador',
     intro1: 'Quer ajudar a ciência e ainda descobrir suas Habilidades Fundamentais de forma gratuita?!',
-    intro1explicacao: 'Este projeto de doutorado investiga as principais habilidades presentes em treinadores(as). Ao se cadastrar e responder os questionários, você saberá seus níveis em três vertentes diferentes (Gestão e Decisão, Habilidades Psicológicas e Bem-estar e Relação interpessoal). Poderá, posteriormente, receber dicas para melhorar, além de apoio especializado para tirar suas dúvidas. Tudo de forma gratuita.'
+    intro1explicacao: 'Este projeto de doutorado investiga as principais habilidades presentes em treinadores(as). Ao se cadastrar e responder os questionários, você saberá seus níveis em três vertentes diferentes (Gestão e Decisão, Habilidades Psicológicas e Bem-estar e Relação interpessoal). Poderá, posteriormente, receber dicas para melhorar, além de apoio especializado para tirar suas dúvidas. Tudo de forma gratuita.',
+    intro2: 'O que vamos coletar?!',
+    intro3: 'Benefícios do Projeto',
+    intro3titulo1: 'Conhecimento Avançado',
+    intro3explicacao1: ' Oferecemos uma análise detalhada de suas Habilidades Fundamentais de forma gratuita. Basta responder os questionários.',
+    intro3titulo2: 'Estratégias Práticas',
+    intro3explicacao2: 'Fornecemos as principais sugestões para melhorar possíveis defasagens, para se tornar um profissional ainda melhor.',
+    intro3titulo3: 'Apoio Profissional',
+    intro3explicacao3: 'Ao participar da pesquisa, você estará em contato com profissionais que possam tirar suas dúvidas.',
+    intro3titulo4: 'Protótipo da ciência',
+    intro3explicacao4: 'Importante lembrar que esta ferramenta está em processo de validação estatística.',
+    intro4: 'Importante',
+    intro4explicacao1: 'O Modelo de Habilidades Fundamentais do Treinador é um projeto embasado científicamente através de um projeto de doutorado. Portanto, conto com sua seriedade e ética em responder o questionário.',
+    intro5: 'Acesse sua conta',
+    intro5explicacao1: 'Você já sabe quais seus atributos psicológicos como treinador(a)?',
+    intro5botao1: 'Entre na sua conta',
+    intro5botao2: 'Crie uma conta',
+    intro6: 'O que é o Modelo de Habilidades Fundamentais do Treinador',
+    intro7: 'Por que este Projeto é importante?',
+    intro7explicacao1: 'Você já se deparou com muitas pesquisas focadas no treinador ou treinadora? Eu aposto que não. Os(as) treinadores(as) desempenham um papel central no desenvolvimento dos atletas e alunos, tanto tecnicamente quanto mentalmente. Ao entender as Habilidades Fundamentais, este projeto contribui diretamente para a melhoria do profissional, da performance do atletas e todos os envolvidos com o esporte.',
+    intro8: 'Principais dúvidas',
+    intro8titulo1: 'Quanto tempo demora?',
+    intro8explicacao1: ' Cerca de 5 minutos para responder os três questionários.',
+    intro8titulo2: 'Quando sai o resultado?',
+    intro8explicacao2: 'O resultado aparece na hora, basta finalizar todos os questionários.',
+    intro8titulo3: 'Posso fazer mais de uma vez?',
+    intro8explicacao3: 'Você poderá refazer os testes a cada 3 meses.',
+    intro8titulo4: 'Para que eu uso os resultados?',
+    intro8explicacao4: 'Com o resultado, você poderá treinar os pontos que julgar necessário para crescer como treinador(a).',
+    footer: 'Modelo de Habilidades Fundamentais do Treinador | Desenvolvido por Kaio Guerrero'
+  },
+  loginPage: {
+    tituloLogin: 'Login',
+    modeloGeral: 'Modelo de Habilidades Fundamentais do Treinador ',
+    cabecalho1: 'Início',
+    cabecalho2: 'Crie sua conta',
+    tituloCabecalho: 'Acesse sua conta',
+    campoEmail: 'E-mail:',
+    campoSenha: 'Senha:',
+    esqueciSenha: 'Esqueci minha senha',
+    entrar: 'Entrar',
+    footer: 'Modelo de Habilidades Fundamentais do Treinador | Desenvolvido por Kaio Guerrero'
   }
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pt);
+
+/***/ }),
+
+/***/ "./i18n/locales/tr.js":
+/*!****************************!*\
+  !*** ./i18n/locales/tr.js ***!
+  \****************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var tr = {
+  coachPage: {
+    tituloSite: 'Painel do Treinador',
+    bemVindo: 'Bem-vindo(a), ',
+    estaFuncaoEstaraDisponivelEmBreveAguarde: 'Esta função estará disponível em abril. Aguarde!'
+  },
+  mainPage: {
+    tituloGeral: 'Antrenör Temel Becerileri Modeli ',
+    modeloGeral: 'Antrenör Temel Becerileri Modeli ',
+    intro1: 'Bilime katkıda bulunmak ve Temel Becerilerinizi ücretsiz olarak keşfetmek ister misiniz?! ',
+    intro1explicacao: 'Bu doktora projesi, antrenörlerde bulunan temel becerileri araştırmaktadır. Bu doktora projesi, antrenörlerde bulunan temel becerileri araştırmaktadır.  Daha sonra, iyileştirme ipuçlarının yanı sıra sorularınızı yanıtlamak için uzman desteği alabilirsiniz. Tamamen ücretsiz.',
+    intro2: 'Neler toplayacağız?! ',
+    intro3: 'Project Benefits ',
+    intro3titulo1: 'Advanced Knowledge ',
+    intro3explicacao1: ' We offer a detailed analysis of your Fundamental Skills for free. Just answer the questionnaires. ',
+    intro3titulo2: 'Practical Strategies ',
+    intro3explicacao2: 'We provide key suggestions to improve potential gaps, helping you become an even better professional. ',
+    intro3titulo3: 'Professional Support ',
+    intro3explicacao3: 'By participating in the research, you will be in contact with professionals who can answer your questions. ',
+    intro3titulo4: 'Scientific Prototype',
+    intro3explicacao4: 'Important to remember that this tool is in the process of statistical validation. ',
+    intro4: 'Important ',
+    intro4explicacao1: 'The Model is a scientifically based project through a doctoral study. Therefore, I count on your seriousness and ethics in answering the questionnaire. ',
+    intro5: 'Hesabınıza erişin ',
+    intro5explicacao1: 'Bir antrenör olarak psikolojik özelliklerinizi zaten biliyor musunuz? ',
+    intro5botao1: 'Hesabınıza giriş yapın ',
+    intro5botao2: 'Hesap oluşturun ',
+    intro6: 'Antrenör Temel Becerileri Modeli Nedir? ',
+    intro7: 'Bu proje neden önemli? ',
+    intro7explicacao1: 'Have you come across many research studies focused on coaches? I bet not. Coaches play a central role in the development of athletes and students, both technically and mentally. By understanding Fundamental Skills, this project directly contributes to professional improvement, athlete performance, and everyone involved in sports.',
+    intro8: 'Asked Questions ',
+    intro8titulo1: 'How long does it take? ',
+    intro8explicacao1: ' About 5 minutes to answer the three questionnaires.',
+    intro8titulo2: 'When do the results appears?',
+    intro8explicacao2: 'The result appears instantly; just finish all the questionnaires. ',
+    intro8titulo3: 'Can I do it more than once? ',
+    intro8explicacao3: 'You can retake the tests every 3 months. ',
+    intro8titulo4: 'What do I use the results for? ',
+    intro8explicacao4: 'With the results, you can train the points you deem necessary to grow as a coach. ',
+    footer: 'Coach Fundamental Skills Model | Developed by Kaio Guerrero '
+  },
+  loginPage: {
+    tituloLogin: 'Login',
+    modeloGeral: 'Modelo de Habilidades Fundamentais do Treinador ',
+    cabecalho1: 'Início',
+    cabecalho2: 'Crie sua conta',
+    tituloCabecalho: 'Acesse sua conta',
+    campoEmail: 'E-mail:',
+    campoSenha: 'Senha:',
+    esqueciSenha: 'Esqueci minha senha',
+    entrar: 'Entrar',
+    footer: 'Modelo de Habilidades Fundamentais do Treinador | Desenvolvido por Kaio Guerrero'
+  }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tr);
 
 /***/ }),
 
