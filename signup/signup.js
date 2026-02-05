@@ -37845,6 +37845,10 @@ document.addEventListener('DOMContentLoaded', function () {
       else if (element.tagName === 'IMG' || element.tagName === 'IFRAME') {
         element.setAttribute('src', text);
       }
+      // ADICIONE ESTA CONDIÇÃO PARA O LINK DO PDF
+      else if (element.tagName === 'A') {
+        element.setAttribute('href', text);
+      }
       // 3. Para os demais elementos (span, h2, p, etc), traduz o texto interno
       else {
         element.innerHTML = text;
@@ -37982,21 +37986,109 @@ var en = {
     botaoConta: 'Access your account',
     redefinirSenha: 'Reset',
     campoEmail: 'E-mail:',
-    botaoRedefinir: 'Reset',
+    botaoRedefinir: 'Reset your password',
     footer: 'Coach Fundamental Skills Model | Developed by Kaio Guerrero',
     reset: 'Password reset email sent. Please check your inbox and/or spam folder.'
   },
-  criarContaPage: {
-    tituloSenha: 'Reset Password',
+  registerPage: {
+    tituloRegister: 'Signup',
     modeloGeral: 'Coach Fundamental Skills Model',
+    linkTCLE: '../imgs/TCLE_en.pdf',
+    textoTCLE: 'I have read and accept the ethics terms',
     botaoInicio: 'Home',
     botaoConta: 'Access your account',
-    redefinirSenha: 'Reset',
+    tituloCabecalho: 'Create your registration',
+    campoNome: 'Full Name:',
+    campoIdade: 'Age:',
+    campoNascimento: 'Date of birth:',
+    campoId: 'ID/Tax Number:',
+    campoGender: 'Gender:',
+    campoSelect: 'Select',
+    campoMale: 'Male',
+    campoFemale: 'Female',
+    campoOther: 'Other',
+    campoNoComment: 'Prefer not to say',
+    campoSport: 'Main sports modality:',
+    atletismo: 'Athletics',
+    badminton: 'Badminton',
+    basquete: 'Basketball',
+    beach: 'Beach Tennis',
+    cricket: 'Cricket',
+    esgrima: 'Fencing',
+    eletronic: 'E-Sports',
+    fitness: 'Fitness',
+    futebol: 'Football/Soccer',
+    fut5: '5-a-side Football',
+    futsal: 'Futsal',
+    ginastica: 'Gymnastics',
+    goalball: 'Goalball',
+    handebol: 'Handball',
+    lutas: 'Various Combat Sports',
+    natação: 'Swimming',
+    rugby: 'Rugby',
+    surfe: 'Surfing',
+    skate: 'Skateboarding',
+    tenis: 'Tennis',
+    tenisMesa: 'Table Tennis',
+    volei: 'Volleyball',
+    voleiPraia: 'Beach Volleyball',
+    xadrez: 'Chess',
+    outraModalidade: 'Other modality',
+    qual: 'Which one?',
+    campoExperiencia: 'Experience time as a coach in this modality:',
+    campoExperiencia1: 'Up to 1 year',
+    campoExperiencia2: 'Between 1 and 3 years',
+    campoExperiencia3: 'Between 3 and 5 years',
+    campoExperiencia4: 'Between 5 and 10 years',
+    campoExperiencia5: 'Between 10 and 15 years',
+    campoExperiencia6: 'Over 15 years',
+    campoFormacao: 'Education:',
+    campoFormacao1: 'High school graduate',
+    campoFormacao2: 'Physical Education degree graduate',
+    campoFormacao3: 'Physical Education degree incomplete',
+    campoFormacao4: 'Sport Coach Course',
+    campoFormacao5: 'Specialization/Post-grad complete',
+    campoFormacao6: 'Master\'s degree complete',
+    campoFormacao7: 'PhD complete',
+    campoRenda: 'Your income as a coach:',
+    campoRenda1: 'Up to 1.5 Minimum Wages',
+    campoRenda2: 'Between 1.5 and 3 Minimum Wages',
+    campoRenda3: 'Between 3 and 4.5 Minimum Wages',
+    campoRenda4: 'Between 4.5 and 7.5 Minimum Wages',
+    campoRenda5: 'Above 7.5 Minimum Wages',
     campoEmail: 'E-mail:',
-    botaoRedefinir: 'Reset',
+    campoSenha: 'Password:',
+    campoConfirm: 'Confirm password:',
+    campoEnviar: 'Send',
+    placeholderSenhaNovamente: 'Re-enter your password',
+    placeholderSenha: 'Minimum 6 characters',
     footer: 'Coach Fundamental Skills Model | Developed by Kaio Guerrero',
-    erro18anos: 'You cannou participate. Come back with 18 years old!'
+    erroNome: "Please, enter your name!",
+    erroData: "Please enter your date of birth",
+    erroIdade: "You cannot participate; please return when you are 18!",
+    erroId: "Please, enter your ID/Tax number!",
+    erroGenero: "Please select a gender option",
+    erroModalidade: "Which sport do you coach?",
+    erroInformeModalidade: "Please state your sport",
+    erroExperiencia: "Please fill in your experience time.",
+    erroFormacao: "What is your education level?",
+    erroRenda: "What is your income?",
+    erroEmail: "Please fill in your e-mail correctly.",
+    erroSenha: "Please create a password.",
+    erroTermo: "Please sign the consent form!"
   }
+
+  // criarContaPage: {
+  //     tituloSenha: 'Reset Password',
+  //     modeloGeral: 'Coach Fundamental Skills Model',
+  //     botaoInicio: 'Home',
+  //     botaoConta: 'Access your account',
+  //     redefinirSenha: 'Reset',
+  //     campoEmail: 'E-mail:',
+  //     botaoRedefinir: 'Reset',
+  //     footer: 'Coach Fundamental Skills Model | Developed by Kaio Guerrero',
+  //     erro18anos:'You cannou participate. Come back with 18 years old!',
+  // },
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (en);
 
@@ -38165,11 +38257,98 @@ var pt = {
     modeloGeral: 'Modelo de Habilidades Fundamentais do Treinador ',
     botaoInicio: 'Início',
     botaoConta: 'Acesse sua conta',
-    redefinirSenha: 'Redefinir',
+    redefinirSenha: 'Redefinir sua senha',
     campoEmail: 'E-mail:',
     botaoRedefinir: 'Redefinir',
     footer: 'Modelo de Habilidades Fundamentais do Treinador | Desenvolvido por Kaio Guerrero',
     reset: 'E-mail de redefinição de senha enviado. Verifique sua caixa de entrada e/ou spam.'
+  },
+  registerPage: {
+    tituloRegister: 'Signup',
+    modeloGeral: 'Modelo de Habilidades Fundamentais do Treinador ',
+    linkTCLE: '../imgs/TCLE_pt.pdf',
+    textoTCLE: 'Li e aceito os termos de ética',
+    botaoInicio: 'Início',
+    botaoConta: 'Acesse sua conta',
+    tituloCabecalho: 'Crie seu cadastro',
+    campoNome: 'Nome Completo:',
+    campoIdade: 'Idade:',
+    campoNascimento: 'Data de nascimento:',
+    campoId: 'CPF:',
+    campoGender: 'Gênero:',
+    campoSelect: 'Selecione',
+    campoMale: 'Masculino',
+    campoFemale: 'Feminino',
+    campoOther: 'Outro',
+    campoNoComment: 'Prefiro não dizer',
+    campoSport: 'Modalidade esportiva principal:',
+    atletismo: 'Atletismo',
+    badminton: 'Badminton',
+    basquete: 'Basquete',
+    beach: 'Beach Tênis',
+    cricket: 'Cricket',
+    esgrima: 'Esgrima',
+    eletronic: 'E-Sports',
+    fitness: 'Fitness',
+    futebol: 'Futebol',
+    fut5: 'Futebol de 5',
+    futsal: 'Futsal',
+    ginastica: 'Ginástica',
+    goalball: 'Goalball',
+    handebol: 'Handebol',
+    lutas: 'Lutas diversas',
+    natação: 'Natação',
+    rugby: 'Rugby',
+    surfe: 'Surfe',
+    skate: 'Skate',
+    tenis: 'Tênis',
+    tenisMesa: 'Tênis de mesa',
+    volei: 'Vôlei',
+    voleiPraia: 'Vôlei de praia',
+    xadrez: 'Xadrez',
+    outraModalidade: 'Outra modalidade',
+    qual: 'Qual?',
+    campoExperiencia: 'Tempo de Experiência como treinador (a) nesta modalidade:',
+    campoExperiencia1: 'Até 1 ano',
+    campoExperiencia2: 'Entre 1 e 3 anos',
+    campoExperiencia3: 'Entre 3 e 5 anos',
+    campoExperiencia4: 'Entre 5 e 10 anos',
+    campoExperiencia5: 'Entre 10 e 15 anos',
+    campoExperiencia6: 'Acima de 15 anos',
+    campoFormacao: 'Formação:',
+    campoFormacao1: 'Ensino médio completo',
+    campoFormacao2: 'Graduação em Educação Física completo',
+    campoFormacao3: 'Graduação em Educação Física incompleto',
+    campoFormacao4: 'Graduação em outra área',
+    campoFormacao5: 'Especialização completa',
+    campoFormacao6: 'Mestrado completo',
+    campoFormacao7: 'Doutorado completo',
+    campoRenda: 'Sua renda como treinador (a):',
+    campoRenda1: 'Até R$ 1.500,00',
+    campoRenda2: 'Entre R$ 1.500,00 e R$ 3.000,00',
+    campoRenda3: 'Entre R$ 3.000,00 e R$ 4.500,00',
+    campoRenda4: 'Entre R$ 4.500,00 e R$ 7.500,00',
+    campoRenda5: 'Acima de R$ 7.500,00',
+    campoEmail: 'E-mail:',
+    campoSenha: 'Senha:',
+    campoConfirm: 'Confirmar senha:',
+    campoEnviar: 'Enviar',
+    placeholderSenhaNovamente: 'Digite novamente sua senha',
+    placeholderSenha: 'Mínimo de 6 caracteres',
+    footer: 'Modelo de Habilidades Fundamentais do Treinador | Desenvolvido por Kaio Guerrero',
+    erroNome: "Por favor, coloque seu nome!",
+    erroData: "Responda sua data de nascimento",
+    erroIdade: "Não poderá participar, volte quando tiver 18 anos!",
+    erroId: "Por favor, coloque seu cpf!",
+    erroGenero: "Selecione uma opção no gênero",
+    erroModalidade: "Qual modalidade você é treinador(a)",
+    erroInformeModalidade: "Informe sua modalidade",
+    erroExperiencia: "Preencha o tempo de experiência.",
+    erroFormacao: "Qual sua formação?",
+    erroRenda: "Qual sua renda?",
+    erroEmail: "Preencha corretamente seu e-mail.",
+    erroSenha: "Crie uma senha.",
+    erroTermo: "Assine o termo por favor!"
   }
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pt);
@@ -38280,11 +38459,98 @@ var tr = {
     modeloGeral: 'Antrenör Temel Becerileri Modeli',
     botaoInicio: 'Ana Sayfa',
     botaoConta: 'Hesabınıza erişin',
-    redefinirSenha: 'Sıfırla',
+    redefinirSenha: 'Şifrenizi sıfırlayın',
     campoEmail: 'E-posta:',
-    botaoRedefinir: 'Sıfırla',
+    botaoRedefinir: 'Şifreyi sıfırla',
     footer: 'Antrenör Temel Becerileri Modeli | Kaio Guerrero tarafından geliştirilmiştir',
     reset: 'Şifre sıfırlama e-postası gönderildi. Lütfen gelen kutunuzu ve/veya spam klasörünüzü kontrol edin.'
+  },
+  registerPage: {
+    tituloRegister: 'Kayıt Ol',
+    modeloGeral: 'Antrenör Temel Becerileri Modeli',
+    linkTCLE: '../imgs/TCLE_tr.pdf',
+    textoTCLE: 'Etik şartları okudum ve kabul ediyorum',
+    botaoInicio: 'Ana Sayfa',
+    botaoConta: 'Hesabınıza erişin',
+    tituloCabecalho: 'Kaydınızı oluşturun',
+    campoNome: 'Ad Soyad:',
+    campoIdade: 'Yaş:',
+    campoNascimento: 'Doğum tarihi:',
+    campoId: 'T.C. Kimlik No / Kimlik No:',
+    campoGender: 'Cinsiyet:',
+    campoSelect: 'Seçiniz',
+    campoMale: 'Erkek',
+    campoFemale: 'Kadın',
+    campoOther: 'Diğer',
+    campoNoComment: 'Belirtmek istemiyorum',
+    campoSport: 'Ana spor branşı:',
+    atletismo: 'Atletizm',
+    badminton: 'Badminton',
+    basquete: 'Basketbol',
+    beach: 'Plaj Tenisi',
+    cricket: 'Kriket',
+    esgrima: 'Eskrim',
+    eletronic: 'E-Spor',
+    fitness: 'Fitness',
+    futebol: 'Futbol',
+    fut5: 'Sesi Görenler Futbol (5 kişilik)',
+    futsal: 'Futsal',
+    ginastica: 'Jimnastik',
+    goalball: 'Goalball',
+    handebol: 'Hentbol',
+    lutas: 'Çeşitli Dövüş Sanatları',
+    natação: 'Yüzme',
+    rugby: 'Ragbi',
+    surfe: 'Sörf',
+    skate: 'Kaykay',
+    tenis: 'Tenis',
+    tenisMesa: 'Masa Tenisi',
+    volei: 'Voleybol',
+    voleiPraia: 'Plaj Voleybolu',
+    xadrez: 'Satranç',
+    outraModalidade: 'Diğer branş',
+    qual: 'Hangisi?',
+    campoExperiencia: 'Bu branşta antrenör olarak deneyim süresi:',
+    campoExperiencia1: '1 yıla kadar',
+    campoExperiencia2: '1 ile 3 yıl arası',
+    campoExperiencia3: '3 ile 5 yıl arası',
+    campoExperiencia4: '5 ile 10 yıl arası',
+    campoExperiencia5: '10 ile 15 yıl arası',
+    campoExperiencia6: '15 yıl üzeri',
+    campoFormacao: 'Eğitim Durumu:',
+    campoFormacao1: 'Lise mezunu',
+    campoFormacao2: 'Beden Eğitimi lisans mezunu',
+    campoFormacao3: 'Beden Eğitimi lisans devam ediyor',
+    campoFormacao4: 'Antrenörlük Belgesi / Kursu',
+    campoFormacao5: 'Uzmanlık/Yüksek lisans tamamlandı',
+    campoFormacao6: 'Yüksek lisans tamamlandı',
+    campoFormacao7: 'Doktora tamamlandı',
+    campoRenda: 'Antrenör olarak geliriniz:',
+    campoRenda1: '1.5 Asgari Ücrete kadar',
+    campoRenda2: '1.5 ile 3 Asgari Ücret arası',
+    campoRenda3: '3 ile 4.5 Asgari Ücret arası',
+    campoRenda4: '4.5 ile 7.5 Asgari Ücret arası',
+    campoRenda5: '7.5 Asgari Ücret üzeri',
+    campoEmail: 'E-posta:',
+    campoSenha: 'Şifre:',
+    campoConfirm: 'Şifreyi onayla:',
+    campoEnviar: 'Gönder',
+    placeholderSenhaNovamente: 'Şifrenizi tekrar girin',
+    placeholderSenha: 'En az 6 karakter',
+    footer: 'Antrenör Temel Becerileri Modeli | Kaio Guerrero tarafından geliştirilmiştir',
+    erroNome: "Lütfen adınızı giriniz!",
+    erroData: "Lütfen doğum tarihinizi giriniz",
+    erroIdade: "Katılamazsınız; lütfen 18 yaşına geldiğinizde tekrar gelin!",
+    erroId: "Lütfen kimlik numaranızı giriniz!",
+    erroGenero: "Lütfen bir cinsiyet seçeneği seçiniz",
+    erroModalidade: "Hangi branşta antrenörlük yapıyorsunuz?",
+    erroInformeModalidade: "Lütfen branşınızı belirtiniz",
+    erroExperiencia: "Lütfen deneyim sürenizi doldurunuz.",
+    erroFormacao: "Eğitim durumunuz nedir?",
+    erroRenda: "Geliriniz nedir?",
+    erroEmail: "Lütfen e-posta adresinizi doğru giriniz.",
+    erroSenha: "Lütfen bir şifre oluşturun.",
+    erroTermo: "Lütfen onam formunu onaylayın!"
   }
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tr);
@@ -40979,21 +41245,23 @@ var onSubmitForm = /*#__PURE__*/function () {
             _context.next = 19;
             break;
           }
-          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error("Por favor, coloque seu nome!");
+          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error(window.getI18nMessage('registerPage.erroNome'));
+          // "Por favor, coloque seu nome!"
           return _context.abrupt("return");
         case 19:
           if (!(birth.length <= 0)) {
             _context.next = 22;
             break;
           }
-          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error("Responda sua data de nascimento");
+          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error(window.getI18nMessage('registerPage.erroData'));
+          // "Responda sua data de nascimento"
           return _context.abrupt("return");
         case 22:
           if (!(+age < 18)) {
             _context.next = 25;
             break;
           }
-          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error(window.getI18nMessage('criarContaPage.erro18anos'));
+          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error(window.getI18nMessage('registerPage.erroIdade'));
           // "Não poderá participar, volte quando tiver 18!"
           return _context.abrupt("return");
         case 25:
@@ -41001,70 +41269,80 @@ var onSubmitForm = /*#__PURE__*/function () {
             _context.next = 28;
             break;
           }
-          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error("Por favor, coloque seu cpf!");
+          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error(window.getI18nMessage('registerPage.erroId'));
+          // "Por favor, coloque seu cpf!"
           return _context.abrupt("return");
         case 28:
           if (!(gender.length <= 0)) {
             _context.next = 31;
             break;
           }
-          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error("Selecione uma opção no gênero");
+          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error(window.getI18nMessage('registerPage.erroGenero'));
+          // "Selecione uma opção no gênero"
           return _context.abrupt("return");
         case 31:
           if (!(modality.length <= 0)) {
             _context.next = 34;
             break;
           }
-          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error("Qual modalidade você é treinador(a)");
+          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error(window.getI18nMessage('registerPage.erroModalidade'));
+          // "Qual modalidade você é treinador(a)"
           return _context.abrupt("return");
         case 34:
           if (!(modality == 'outros' && otherModality.length <= 0)) {
             _context.next = 37;
             break;
           }
-          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error("Informe sua modalidade");
+          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error(window.getI18nMessage('registerPage.erroInformeModalidade'));
+          // "Informe sua modalidade"
           return _context.abrupt("return");
         case 37:
           if (!(experience.length <= 0)) {
             _context.next = 40;
             break;
           }
-          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error("Preencha o tempo de experiência.");
+          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error(window.getI18nMessage('registerPage.erroExperiencia'));
+          // "Preencha o tempo de experiência."
           return _context.abrupt("return");
         case 40:
           if (!(formation.length <= 0)) {
             _context.next = 43;
             break;
           }
-          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error("Qual sua formação?");
+          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error(window.getI18nMessage('registerPage.erroFormacao'));
+          // "Qual sua formação?"
           return _context.abrupt("return");
         case 43:
           if (!(income.length <= 0)) {
             _context.next = 46;
             break;
           }
-          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error("Qual sua renda?");
+          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error(window.getI18nMessage('registerPage.erroRenda'));
+          // "Qual sua renda?"
           return _context.abrupt("return");
         case 46:
           if (!(email.length <= 0 && !email.includes("@") && !email.includes("."))) {
             _context.next = 49;
             break;
           }
-          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error("Preencha corretamente seu e-mail.");
+          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error(window.getI18nMessage('registerPage.erroEmail'));
+          // "Preencha corretamente seu e-mail."
           return _context.abrupt("return");
         case 49:
           if (!(password.length <= 0 || password != confirmpassword)) {
             _context.next = 52;
             break;
           }
-          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error("Crie uma senha.");
+          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error(window.getI18nMessage('registerPage.erroSenha'));
+          // "Crie uma senha."
           return _context.abrupt("return");
         case 52:
           if (!(tcle == false)) {
             _context.next = 55;
             break;
           }
-          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error("Assine o termo por favor!");
+          _services__WEBPACK_IMPORTED_MODULE_3__.notification.error(window.getI18nMessage('registerPage.erroTermo'));
+          // "Assine o termo por favor!"
           return _context.abrupt("return");
         case 55:
           userData = {
