@@ -37843,22 +37843,48 @@ window.getI18nMessage = function (key) {
   return getItemFromLanguageJson(key);
 };
 document.addEventListener('DOMContentLoaded', function () {
-  // Get all page elements to be translated.
+  // Busca todos os elementos que possuem o atributo data-i18n
   var elements = document.querySelectorAll('[data-i18n]');
-
-  // On each element, found the translation from JSON file & update.
-  elements.forEach(function (element, index) {
+  elements.forEach(function (element) {
     var key = element.getAttribute('data-i18n');
     var text = getItemFromLanguageJson(key);
-
-    // Regular text replacement for given locale.
-    element.innerHTML = text;
+    if (text) {
+      // 1. Se for um INPUT, traduz o placeholder (ex: senha)
+      if (element.tagName === 'INPUT') {
+        element.setAttribute('placeholder', text);
+      }
+      // 2. Se for uma IMG, traduz o src (resolve o erro do diagrama MHFT)
+      else if (element.tagName === 'IMG' || element.tagName === 'IFRAME') {
+        element.setAttribute('src', text);
+      }
+      // 3. Para os demais elementos (span, h2, p, etc), traduz o texto interno
+      else {
+        element.innerHTML = text;
+      }
+    }
   });
 
-  // Set <html> tag lang attribute.
+  // Define o atributo lang da tag <html> para o idioma detectado
   var htmlElement = document.querySelector('html');
   htmlElement.setAttribute('lang', pageLanguage);
 });
+// document.addEventListener('DOMContentLoaded', function() {
+//    // Get all page elements to be translated.
+//   const elements = document.querySelectorAll('[data-i18n]');
+
+//   // On each element, found the translation from JSON file & update.
+//   elements.forEach((element, index) => {
+//     const key = element.getAttribute('data-i18n');
+//     let text = getItemFromLanguageJson(key);
+
+//     // Regular text replacement for given locale.
+//     element.innerHTML = text;
+//   });
+
+//   // Set <html> tag lang attribute.
+//   const htmlElement = document.querySelector('html');
+//   htmlElement.setAttribute('lang', pageLanguage);
+// });
 
 /***/ }),
 
@@ -37912,7 +37938,8 @@ var en = {
     intro8titulo4: 'What do I use the results for? ',
     intro8explicacao4: 'With the results, you can train the points you deem necessary to grow as a coach. ',
     footer: 'Coach Fundamental Skills Model | Developed by Kaio Guerrero ',
-    imagem: 'imgs/MHFT_pt.png'
+    imagem: 'imgs/MHFT_en.png',
+    videoPrincipal: "imgs/MHFT_en.mp4"
   },
   loginPage: {
     tituloLogin: 'Login',
@@ -37922,6 +37949,7 @@ var en = {
     tituloCabecalho: 'Log in to your account',
     campoEmail: 'E-mail:',
     campoSenha: 'Password:',
+    placeholderSenha: "Minimum of 6 characters",
     esqueciSenha: 'Forgot my password',
     entrar: 'Log In',
     footer: 'Coach Fundamental Skills Model | Developed by Kaio Guerrero'
@@ -37967,7 +37995,19 @@ var en = {
     redefinirSenha: 'Reset',
     campoEmail: 'E-mail:',
     botaoRedefinir: 'Reset',
-    footer: 'Coach Fundamental Skills Model | Developed by Kaio Guerrero'
+    footer: 'Coach Fundamental Skills Model | Developed by Kaio Guerrero',
+    reset: 'Password reset email sent. Please check your inbox and/or spam folder.'
+  },
+  criarContaPage: {
+    tituloSenha: 'Reset Password',
+    modeloGeral: 'Coach Fundamental Skills Model',
+    botaoInicio: 'Home',
+    botaoConta: 'Access your account',
+    redefinirSenha: 'Reset',
+    campoEmail: 'E-mail:',
+    botaoRedefinir: 'Reset',
+    footer: 'Coach Fundamental Skills Model | Developed by Kaio Guerrero',
+    erro18anos: 'You cannou participate. Come back with 18 years old!'
   }
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (en);
@@ -38083,7 +38123,8 @@ var pt = {
     intro8titulo4: 'Para que eu uso os resultados?',
     intro8explicacao4: 'Com o resultado, você poderá treinar os pontos que julgar necessário para crescer como treinador(a).',
     footer: 'Modelo de Habilidades Fundamentais do Treinador | Desenvolvido por Kaio Guerrero',
-    imagem: 'imgs/MHFT_pt.png'
+    imagem: 'imgs/MHFT_pt.png',
+    videoPrincipal: "imgs/MHFT_pt.mp4"
   },
   loginPage: {
     tituloLogin: 'Login',
@@ -38093,6 +38134,7 @@ var pt = {
     tituloCabecalho: 'Acesse sua conta',
     campoEmail: 'E-mail:',
     campoSenha: 'Senha:',
+    placeholderSenha: 'Mínimo de 6 caracteres',
     esqueciSenha: 'Esqueci minha senha',
     entrar: 'Entrar',
     footer: 'Modelo de Habilidades Fundamentais do Treinador | Desenvolvido por Kaio Guerrero'
@@ -38138,7 +38180,8 @@ var pt = {
     redefinirSenha: 'Redefinir',
     campoEmail: 'E-mail:',
     botaoRedefinir: 'Redefinir',
-    footer: 'Modelo de Habilidades Fundamentais do Treinador | Desenvolvido por Kaio Guerrero'
+    footer: 'Modelo de Habilidades Fundamentais do Treinador | Desenvolvido por Kaio Guerrero',
+    reset: 'E-mail de redefinição de senha enviado. Verifique sua caixa de entrada e/ou spam.'
   }
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pt);
@@ -38195,7 +38238,8 @@ var tr = {
     intro8titulo4: 'Sonuçları ne için kullanırım? ',
     intro8explicacao4: 'Sonuçlarla birlikte, bir antrenör olarak gelişmek için gerekli gördüğünüz noktalar üzerinde çalışabilirsiniz.',
     footer: 'Antrenör Temel Becerileri Modeli | Kaio Guerrero tarafından geliştirilmiştir',
-    imagem: 'imgs/MHFT_pt.png'
+    imagem: 'imgs/MHFT_tr.png',
+    videoPrincipal: "imgs/MHFT_tr.mp4"
   },
   loginPage: {
     tituloLogin: 'Giriş',
@@ -38206,6 +38250,7 @@ var tr = {
     campoEmail: 'E-posta:',
     campoSenha: 'Şifre:',
     esqueciSenha: 'Şifremi unuttum',
+    placeholderSenha: "En az 6 karakter",
     entrar: 'Giriş Yap',
     footer: 'Antrenör Temel Becerileri Modeli | Kaio Guerrero tarafından geliştirilmiştir'
   },
@@ -38250,7 +38295,8 @@ var tr = {
     redefinirSenha: 'Sıfırla',
     campoEmail: 'E-posta:',
     botaoRedefinir: 'Sıfırla',
-    footer: 'Antrenör Temel Becerileri Modeli | Kaio Guerrero tarafından geliştirilmiştir'
+    footer: 'Antrenör Temel Becerileri Modeli | Kaio Guerrero tarafından geliştirilmiştir',
+    reset: 'Şifre sıfırlama e-postası gönderildi. Lütfen gelen kutunuzu ve/veya spam klasörünüzü kontrol edin.'
   }
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tr);
