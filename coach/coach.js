@@ -37961,9 +37961,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 var en = {
   coachPage: {
-    tituloSite: 'Painel do Treinador',
-    bemVindo: 'Bem-vindo(a), ',
-    estaFuncaoEstaraDisponivelEmBreveAguarde: 'Esta função estará disponível em abril. Aguarde!'
+    tituloSite: 'Coach Dashboard',
+    bemVindo: 'Welcome, ',
+    estaFuncaoEstaraDisponivelEmBreveAguarde: 'This feature will be available in April. Please wait!',
+    footer: 'Coach Fundamental Skills Model | Developed by Kaio Guerrero',
+    resultados: 'Click here to understand the results',
+    modalidade: 'Modality',
+    genero: 'Gender',
+    experiencia: 'Experience',
+    comparacao: 'Compare only responses with the same:',
+    geral: 'Show general result',
+    gestao: 'Management and Decision-Making',
+    interpessoal: 'Interpersonal Relationship',
+    psicologicas: 'Psychological Skills and Well-being',
+    questionarios: 'Answer questionnaires',
+    botaoSair: 'Logout'
   },
   mainPage: {
     tituloGeral: 'Coach Fundamental Skills Model',
@@ -38046,6 +38058,8 @@ var en = {
     importante: 'Important',
     resultadosexplicacao: 'The Coach Fundamental Skills Model is currently in its first phase, validation. In this phase, we are conducting several training courses. After this period, in July 2026, the material will be available here on this platform. For more information, follow us on Instagram @treinador_psi.',
     coleta: 'What will we collect?!',
+    imagem: '../imgs/MHFT_en.png',
+    videoCurso: "imgs/MHFT_pt.mp4",
     footer: 'Coach Fundamental Skills Model | Developed by Kaio Guerrero'
   },
   senhaPage: {
@@ -38053,11 +38067,15 @@ var en = {
     modeloGeral: 'Coach Fundamental Skills Model',
     botaoInicio: 'Home',
     botaoConta: 'Access your account',
-    redefinirSenha: 'Reset',
+    redefinirSenha: 'Reset your password',
     campoEmail: 'E-mail:',
     botaoRedefinir: 'Reset your password',
     footer: 'Coach Fundamental Skills Model | Developed by Kaio Guerrero',
     reset: 'Password reset email sent. Please check your inbox and/or spam folder.'
+  },
+  authMessages: {
+    loginInvalido: 'Invalid email or password',
+    erroGenerico: 'An unexpected error occurred.'
   },
   registerPage: {
     tituloRegister: 'Signup',
@@ -38077,7 +38095,7 @@ var en = {
     campoFemale: 'Female',
     campoOther: 'Other',
     campoNoComment: 'Prefer not to say',
-    campoSport: 'Main sports modality:',
+    campoSport: 'Main sport:',
     atletismo: 'Athletics',
     badminton: 'Badminton',
     basquete: 'Basketball',
@@ -38104,7 +38122,7 @@ var en = {
     xadrez: 'Chess',
     outraModalidade: 'Other modality',
     qual: 'Which one?',
-    campoExperiencia: 'Experience time as a coach in this modality:',
+    campoExperiencia: 'Experience time as a coach in this sport:',
     campoExperiencia1: 'Up to 1 year',
     campoExperiencia2: 'Between 1 and 3 years',
     campoExperiencia3: 'Between 3 and 5 years',
@@ -38145,19 +38163,52 @@ var en = {
     erroEmail: "Please fill in your e-mail correctly.",
     erroSenha: "Please create a password.",
     erroTermo: "Please sign the consent form!"
+  },
+  questionnairePage: {
+    tituloAtitude: 'Management and Decision-Making',
+    modeloGeral: 'Coach Fundamental Skills Model',
+    number1: '1',
+    number2: '2',
+    number3: '3',
+    tituloRelacao: 'Interpersonal Relationship',
+    tituloHabilidades: 'Psychological Skills and Well-being',
+    likert1: 'Strongly disagree',
+    likert2: 'Disagree',
+    likert3: 'Neutral',
+    likert4: 'Agree',
+    likert5: 'Strongly agree',
+    passoAnterior: 'Previous step',
+    perguntaAnterior: 'Previous question',
+    proximaPergunta: 'Next question',
+    enviar: 'Submit answers',
+    footer: 'Coach Fundamental Skills Model | Developed by Kaio Guerrero'
+  },
+  charts: {
+    mediaGeral: 'General Average',
+    suaNota: 'Your Score',
+    tituloGeral: 'General Result',
+    descricao: 'Chart comparing your results with other coaches',
+    tituloRelacao: 'Interpersonal Relationship',
+    tituloHabilidades: 'Psychological Skills and Well-being',
+    tituloAtitude: 'Management and Decision-Making',
+    resultados: 'Results',
+    avisoEspera: 'You must wait 3 months to answer this form again'
+  },
+  categories: {
+    organizational_management: 'Organizational Competence',
+    decision_making: 'Decision Making',
+    communication: 'Communication',
+    coach_athlete_relationship: 'Coach-Athlete Relationship',
+    instruction_leadership: 'Instructional Leadership',
+    democratic_leadership: 'Democratic Leadership',
+    autocratic_leadership: 'Autocratic Leadership',
+    feedback_leadership: 'Positive Feedback Leadership',
+    resilience: 'Resilience',
+    stress: 'Stress Management',
+    positive_mental_health: 'Positive Mental Health',
+    self_efficacy: 'Self-Efficacy',
+    self_confidence: 'Self-Confidence'
   }
-
-  // criarContaPage: {
-  //     tituloSenha: 'Reset Password',
-  //     modeloGeral: 'Coach Fundamental Skills Model',
-  //     botaoInicio: 'Home',
-  //     botaoConta: 'Access your account',
-  //     redefinirSenha: 'Reset',
-  //     campoEmail: 'E-mail:',
-  //     botaoRedefinir: 'Reset',
-  //     footer: 'Coach Fundamental Skills Model | Developed by Kaio Guerrero',
-  //     erro18anos:'You cannou participate. Come back with 18 years old!',
-  // },
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (en);
 
@@ -38239,7 +38290,19 @@ var pt = {
   coachPage: {
     tituloSite: 'Painel do Treinador',
     bemVindo: 'Bem-vindo(a), ',
-    estaFuncaoEstaraDisponivelEmBreveAguarde: 'Esta função estará disponível em abril. Aguarde!'
+    estaFuncaoEstaraDisponivelEmBreveAguarde: 'Esta função estará disponível em abril. Aguarde!',
+    footer: 'Modelo de Habilidades Fundamentais do Treinador | Desenvolvido por Kaio Guerrero',
+    resultados: 'Clique aqui e entenda os resultados',
+    modalidade: '',
+    genero: 'Genêro',
+    experiencia: 'Experiência',
+    comparacao: 'Comparar apenas respostas com a mesma:',
+    geral: 'Mostrar resultado geral',
+    gestao: 'Gestão e Decisão',
+    interpessoal: 'Relação Interpessoal',
+    psicologicas: 'Habilidades Psicológicas e Bem-estar',
+    questionarios: 'Responder questionários',
+    botaoSair: 'Sair'
   },
   mainPage: {
     tituloGeral: 'Modelo de Habilidades Fundamentais do Treinador',
@@ -38322,7 +38385,9 @@ var pt = {
     importante: 'Importante',
     resultadosexplicacao: 'O Modelo de Habilidades Fundamentais do Treinador está na primeira fase, a de validação. Nesta validação, estamos fazendo vários cursos de capacitação. Após essa fase, em Julho/2026, o material estará disponível aqui nesta plataforma. Para acessar mais informações siga no instagram @treinador_psi. ',
     coleta: 'O que coletamos?',
-    footer: 'Modelo de Habilidades Fundamentais do Treinador | Desenvolvido por Kaio Guerrero'
+    footer: 'Modelo de Habilidades Fundamentais do Treinador | Desenvolvido por Kaio Guerrero',
+    imagem: '../imgs/MHFT_pt.png',
+    videoCurso: "../imgs/MHFT_pt.mp4"
   },
   senhaPage: {
     tituloSenha: 'Redefinir senha',
@@ -38334,6 +38399,10 @@ var pt = {
     botaoRedefinir: 'Redefinir',
     footer: 'Modelo de Habilidades Fundamentais do Treinador | Desenvolvido por Kaio Guerrero',
     reset: 'E-mail de redefinição de senha enviado. Verifique sua caixa de entrada e/ou spam.'
+  },
+  authMessages: {
+    loginInvalido: 'Email ou senha inválidos',
+    erroGenerico: 'Ocorreu um erro inesperado.'
   },
   registerPage: {
     tituloRegister: 'Signup',
@@ -38421,6 +38490,51 @@ var pt = {
     erroEmail: "Preencha corretamente seu e-mail.",
     erroSenha: "Crie uma senha.",
     erroTermo: "Assine o termo por favor!"
+  },
+  questionnairePage: {
+    tituloAtitude: 'Gestão e Decisão',
+    modeloGeral: 'Modelo de Habilidades Fundamentais do Treinador ',
+    number1: '1',
+    number2: '2',
+    number3: '3',
+    tituloRelacao: 'Relação Interpessoal',
+    tituloHabilidades: 'Habilidades Psicológicas e Bem-estar',
+    likert1: 'Discordo totalmente',
+    likert2: 'Discordo',
+    likert3: 'Neutro',
+    likert4: 'Concordo',
+    likert5: 'Concordo totalmente',
+    passoAnterior: 'Passo anterior',
+    perguntaAnterior: 'Pergunta anterior',
+    proximaPergunta: 'Próxima pergunta',
+    enviar: 'Enviar respostas',
+    footer: 'Modelo de Habilidades Fundamentais do Treinador | Desenvolvido por Kaio Guerrero'
+  },
+  charts: {
+    mediaGeral: 'Média Geral',
+    suaNota: 'Sua Nota',
+    tituloGeral: 'Resultado Geral',
+    descricao: 'Gráfico comparando seus resultados com outros treinadores',
+    tituloRelacao: 'Relação Interpessoal',
+    tituloHabilidades: 'Habilidades Psicológicas e Bem-estar',
+    tituloAtitude: 'Gestão e Decisão',
+    resultados: 'Resultados',
+    avisoEspera: 'Você precisa esperar 3 meses para responder o formulário novamente'
+  },
+  categories: {
+    organizational_management: 'Competência Organizacional',
+    decision_making: 'Tomada de Decisão',
+    communication: 'Comunicação',
+    coach_athlete_relationship: 'Relação Treinador-Atleta',
+    instruction_leadership: 'Liderança Instrução',
+    democratic_leadership: 'Liderança Democrática',
+    autocratic_leadership: 'Liderança Autocrática',
+    feedback_leadership: 'Liderança Feedback Positivo',
+    resilience: 'Resiliência',
+    stress: 'Gerenciamento de Estresse',
+    positive_mental_health: 'Saúde Mental Positiva',
+    self_efficacy: 'Autoeficácia',
+    self_confidence: 'Autoconfiança'
   }
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pt);
@@ -38440,9 +38554,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 var tr = {
   coachPage: {
-    tituloSite: 'Painel do Treinador',
-    bemVindo: 'Bem-vindo(a), ',
-    estaFuncaoEstaraDisponivelEmBreveAguarde: 'Esta função estará disponível em abril. Aguarde!'
+    tituloSite: 'Antrenör Paneli',
+    bemVindo: 'Hoş geldiniz, ',
+    estaFuncaoEstaraDisponivelEmBreveAguarde: 'Bu özellik Nisan ayında kullanıma sunulacaktır. Lütfen bekleyin!',
+    footer: 'Antrenör Temel Becerileri Modeli | Kaio Guerrero tarafından geliştirilmiştir',
+    resultados: 'Sonuçları anlamak için buraya tıklayın',
+    modalidade: 'Branş',
+    genero: 'Cinsiyet',
+    experiencia: 'Deneyim',
+    comparacao: 'Sadece aynı özelliğe sahip yanıtları karşılaştır:',
+    geral: 'Genel sonucu göster',
+    gestao: 'Yönetim ve Karar Verme',
+    interpessoal: 'Kişilerarası İlişkiler',
+    psicologicas: 'Psikolojik Beceriler ve Refah',
+    questionarios: 'Anketleri doldur',
+    botaoSair: 'Çıkış Yap'
   },
   mainPage: {
     tituloGeral: 'Antrenör Temel Becerileri Modeli ',
@@ -38525,6 +38651,8 @@ var tr = {
     importante: 'Önemli',
     resultadosexplicacao: 'Antrenör Temel Becerileri Modeli şu anda doğrulama olan ilk aşamasındadır. Bu aşamada çeşitli eğitim kursları düzenliyoruz. Temmuz 2026\'dan sonra materyaller bu platformda mevcut olacaktır. Daha fazla bilgi için Instagram\'da @treinador_psi hesabını takip edin.',
     coleta: 'Neler toplayacağız?!',
+    imagem: '../imgs/MHFT_tr.png',
+    videoCurso: "../imgs/MHFT_pt.mp4",
     footer: 'Antrenör Temel Becerileri Modeli | Kaio Guerrero tarafından geliştirilmiştir'
   },
   senhaPage: {
@@ -38537,6 +38665,10 @@ var tr = {
     botaoRedefinir: 'Şifreyi sıfırla',
     footer: 'Antrenör Temel Becerileri Modeli | Kaio Guerrero tarafından geliştirilmiştir',
     reset: 'Şifre sıfırlama e-postası gönderildi. Lütfen gelen kutunuzu ve/veya spam klasörünüzü kontrol edin.'
+  },
+  authMessages: {
+    loginInvalido: 'Geçersiz e-posta veya şifre',
+    erroGenerico: 'Beklenmedik bir hata oluştu.'
   },
   registerPage: {
     tituloRegister: 'Kayıt Ol',
@@ -38624,6 +38756,51 @@ var tr = {
     erroEmail: "Lütfen e-posta adresinizi doğru giriniz.",
     erroSenha: "Lütfen bir şifre oluşturun.",
     erroTermo: "Lütfen onam formunu onaylayın!"
+  },
+  questionnairePage: {
+    tituloAtitude: 'Yönetim ve Karar Verme',
+    modeloGeral: 'Antrenör Temel Becerileri Modeli',
+    number1: '1',
+    number2: '2',
+    number3: '3',
+    tituloRelacao: 'Kişilerarası İlişkiler',
+    tituloHabilidades: 'Psikolojik Beceriler ve Refah',
+    likert1: 'Kesinlikle katılmıyorum',
+    likert2: 'Katılmıyorum',
+    likert3: 'Kararsızım',
+    likert4: 'Katılıyorum',
+    likert5: 'Kesinlikle katılıyorum',
+    passoAnterior: 'Önceki adım',
+    perguntaAnterior: 'Önceki soru',
+    proximaPergunta: 'Sonraki soru',
+    enviar: 'Yanıtları gönder',
+    footer: 'Antrenör Temel Becerileri Modeli | Kaio Guerrero tarafından geliştirilmiştir'
+  },
+  charts: {
+    mediaGeral: 'Genel Ortalama',
+    suaNota: 'Puanınız',
+    tituloGeral: 'Genel Sonuç',
+    descricao: 'Sonuçlarınızı diğer antrenörlerle karşılaştıran grafik',
+    tituloRelacao: 'Kişilerarası İlişkiler',
+    tituloHabilidades: 'Psikolojik Beceriler ve Refah',
+    tituloAtitude: 'Yönetim ve Karar Verme',
+    resultados: 'Sonuçlar',
+    avisoEspera: 'Bu formu tekrar yanıtlamak için 3 ay beklemeniz gerekmektedir'
+  },
+  categories: {
+    organizational_management: 'Organizasyonel Yetkinlik',
+    decision_making: 'Karar Verme',
+    communication: 'İletişim',
+    coach_athlete_relationship: 'Antrenör-Sporcu İlişkisi',
+    instruction_leadership: 'Öğretici Liderlik',
+    democratic_leadership: 'Demokratik Liderlik',
+    autocratic_leadership: 'Otoriter Liderlik',
+    feedback_leadership: 'Pozitif Geri Bildirim Liderliği',
+    resilience: 'Psikolojik Dayanıklılık',
+    stress: 'Stres Yönetimi',
+    positive_mental_health: 'Pozitif Ruh Sağlığı',
+    self_efficacy: 'Öz Yeterlilik',
+    self_confidence: 'Öz Güven'
   }
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tr);
@@ -38677,7 +38854,7 @@ var QUESTIONNAIRES_CATEGORIES = Object.freeze({
   SELF_CONFIDENCE: 'self_confidence',
   SELF_EFFICACY: 'self_efficacy'
 });
-var CATEGORIES_NAME_MAPPER = Object.freeze((_Object$freeze = {}, _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_Object$freeze, QUESTIONNAIRES_CATEGORIES.ORGANIZATIONAL_MANAGEMENT, 'Competência organizacional'), QUESTIONNAIRES_CATEGORIES.DECISION_MAKING, 'Tomada de decisão'), QUESTIONNAIRES_CATEGORIES.COMMUNICATION, 'Comunicação'), QUESTIONNAIRES_CATEGORIES.COACH_ATHLETE_RELATIONSHIP, 'Relação treinador-atleta'), QUESTIONNAIRES_CATEGORIES.INSTRUCTION_LEADERSHIP, 'Liderança Instrução'), QUESTIONNAIRES_CATEGORIES.DEMOCRATIC_LEADERSHIP, 'Liderança Democrática'), QUESTIONNAIRES_CATEGORIES.AUTOCRATIC_LEADERSHIP, 'Liderança Autocrática'), QUESTIONNAIRES_CATEGORIES.FEEDBACK_LEADERSHIP, 'Liderança Feedback Positivo'), QUESTIONNAIRES_CATEGORIES.RESILIENCE, 'Resiliência'), QUESTIONNAIRES_CATEGORIES.STRESS, 'Gerenciamento de estresse'), _defineProperty(_defineProperty(_defineProperty(_Object$freeze, QUESTIONNAIRES_CATEGORIES.POSITIVE_MENTAL_HEALTH, 'Saúde mental positiva'), QUESTIONNAIRES_CATEGORIES.SELF_EFFICACY, 'Autoeficácia'), QUESTIONNAIRES_CATEGORIES.SELF_CONFIDENCE, 'Autoconfiança')));
+var CATEGORIES_NAME_MAPPER = Object.freeze((_Object$freeze = {}, _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_Object$freeze, QUESTIONNAIRES_CATEGORIES.ORGANIZATIONAL_MANAGEMENT, 'categories.organizational_management'), QUESTIONNAIRES_CATEGORIES.DECISION_MAKING, 'categories.decision_making'), QUESTIONNAIRES_CATEGORIES.COMMUNICATION, 'categories.communication'), QUESTIONNAIRES_CATEGORIES.COACH_ATHLETE_RELATIONSHIP, 'categories.coach_athlete_relationship'), QUESTIONNAIRES_CATEGORIES.INSTRUCTION_LEADERSHIP, 'categories.instruction_leadership'), QUESTIONNAIRES_CATEGORIES.DEMOCRATIC_LEADERSHIP, 'categories.democratic_leadership'), QUESTIONNAIRES_CATEGORIES.AUTOCRATIC_LEADERSHIP, 'categories.autocratic_leadership'), QUESTIONNAIRES_CATEGORIES.FEEDBACK_LEADERSHIP, 'categories.feedback_leadership'), QUESTIONNAIRES_CATEGORIES.RESILIENCE, 'categories.resilience'), QUESTIONNAIRES_CATEGORIES.STRESS, 'categories.stress'), _defineProperty(_defineProperty(_defineProperty(_Object$freeze, QUESTIONNAIRES_CATEGORIES.POSITIVE_MENTAL_HEALTH, 'categories.positive_mental_health'), QUESTIONNAIRES_CATEGORIES.SELF_EFFICACY, 'categories.self_efficacy'), QUESTIONNAIRES_CATEGORIES.SELF_CONFIDENCE, 'categories.self_confidence')));
 var QUESTIONS = Object.freeze(_defineProperty(_defineProperty(_defineProperty({}, FORMS.ATTITUDE, [{
   category: QUESTIONNAIRES_CATEGORIES.DECISION_MAKING,
   text: 'Durante as competições, consigo equilibrar minhas emoções ao tomar decisões importantes.',
@@ -39139,12 +39316,13 @@ var signIn = /*#__PURE__*/function () {
           _context3.next = _context3.t1 === firebase_auth__WEBPACK_IMPORTED_MODULE_0__.AuthErrorCodes.INVALID_LOGIN_CREDENTIALS ? 13 : 15;
           break;
         case 13:
-          _services__WEBPACK_IMPORTED_MODULE_2__.notification.error('Email ou senha inválidos');
-          return _context3.abrupt("break", 17);
+          _services__WEBPACK_IMPORTED_MODULE_2__.notification.error(window.getI18nMessage('authMessages.loginInvalido'));
+          return _context3.abrupt("break", 18);
         case 15:
+          _services__WEBPACK_IMPORTED_MODULE_2__.notification.error(window.getI18nMessage('authMessages.erroGenerico'));
           console.error(_context3.t0);
-          return _context3.abrupt("break", 17);
-        case 17:
+          return _context3.abrupt("break", 18);
+        case 18:
         case "end":
           return _context3.stop();
       }
@@ -41439,7 +41617,9 @@ var processFormData = function processFormData(data) {
   var categoriesData = Object.keys(normalizedFormAvg).reduce(function (acc, cur) {
     return _objectSpread(_objectSpread({}, acc), {}, {
       keys: [].concat(_toConsumableArray(acc.keys), [cur]),
-      names: [].concat(_toConsumableArray(acc.names), [_constants__WEBPACK_IMPORTED_MODULE_7__.CATEGORIES_NAME_MAPPER[cur]]),
+      names: [].concat(_toConsumableArray(acc.names), [window.getI18nMessage(_constants__WEBPACK_IMPORTED_MODULE_7__.CATEGORIES_NAME_MAPPER[cur])
+      // CATEGORIES_NAME_MAPPER[cur],
+      ]),
       avgs: [].concat(_toConsumableArray(acc.avgs), [normalizedFormAvg[cur].avg])
     });
   }, {
@@ -41454,10 +41634,10 @@ var processFormData = function processFormData(data) {
     var categoryAverage = (_normalizedFormAvg$cu = normalizedFormAvg[cur]) === null || _normalizedFormAvg$cu === void 0 ? void 0 : _normalizedFormAvg$cu.avg;
     var hasCategoryAvg = categoryAverage != null;
     return [].concat(_toConsumableArray(compareWithOthers ? [{
-      name: 'Média Geral',
+      name: window.getI18nMessage('charts.mediaGeral'),
       data: [].concat(_toConsumableArray(((_acc$ = acc[0]) === null || _acc$ === void 0 ? void 0 : _acc$.data) || []), [categoryAverage || 0])
     }] : []), _toConsumableArray(userResults ? [{
-      name: 'Sua Nota',
+      name: window.getI18nMessage('charts.suaNota'),
       data: [].concat(_toConsumableArray(((_acc = acc[compareWithOthers ? 1 : 0]) === null || _acc === void 0 ? void 0 : _acc.data) || []), [hasCategoryAvg ? userResultNormalized[cur] : 0])
     }] : []));
   }, []);
@@ -41481,7 +41661,7 @@ var initPolarChart = function initPolarChart(graph, data) {
       polar: true
     },
     accessibility: {
-      description: 'Gráfico com a comparação dos seus resultado com a média das pessoas'
+      description: window.getI18nMessage('charts.descricao')
     },
     title: {
       text: title,
@@ -41549,7 +41729,7 @@ var initBarChart = function initBarChart(graph, data) {
       type: 'bar'
     },
     accessibility: {
-      description: 'Gráfico com a comparação dos seus resultado com a média das pessoas'
+      description: window.getI18nMessage('charts.descricao')
     },
     title: {
       text: title
@@ -41565,7 +41745,7 @@ var initBarChart = function initBarChart(graph, data) {
     yAxis: {
       min: 0,
       title: {
-        text: 'Resultados',
+        text: window.getI18nMessage('charts.resultados'),
         align: 'high'
       },
       labels: {
@@ -41619,7 +41799,7 @@ var initAttitudeGraph = /*#__PURE__*/function () {
           series = _yield$processFormDat.series;
           generalFormAvg = _yield$processFormDat.generalFormAvg;
           generalUserResult = _yield$processFormDat.generalUserResult;
-          title = 'Gestão e Decisão';
+          title = window.getI18nMessage('charts.tituloAtitude');
           initBarChart('attitude-chart-container', {
             title: title,
             categories: categories,
@@ -41654,7 +41834,7 @@ var initInterpersonalRelationshipGraph = /*#__PURE__*/function () {
           series = _yield$processFormDat2.series;
           generalFormAvg = _yield$processFormDat2.generalFormAvg;
           generalUserResult = _yield$processFormDat2.generalUserResult;
-          title = 'Relação Interpessoal';
+          title = window.getI18nMessage('charts.tituloRelacao');
           initPolarChart('interpersonal-relationship-chart-container', {
             title: title,
             categories: categories,
@@ -41689,7 +41869,7 @@ var initEmotionalRegulationGraph = /*#__PURE__*/function () {
           series = _yield$processFormDat3.series;
           generalFormAvg = _yield$processFormDat3.generalFormAvg;
           generalUserResult = _yield$processFormDat3.generalUserResult;
-          title = 'Habilidades Psicológicas e Bem-estar';
+          title = window.getI18nMessage('charts.tituloHabilidades');
           initPolarChart('emotional-regulation-chart-container', {
             title: title,
             categories: categories,
@@ -41723,7 +41903,7 @@ var addCheckFormAnswerHandler = function addCheckFormAnswerHandler(formKey, last
           if (canAnswerForm) {
             window.location = "".concat("/", "questionnaires/").concat(formKey, "/?single=true");
           } else {
-            _services__WEBPACK_IMPORTED_MODULE_6__.notification.warning('Você precisa esperar 3 meses para responder o formulário novamente');
+            _services__WEBPACK_IMPORTED_MODULE_6__.notification.warning(window.getI18nMessage('charts.avisoEspera'));
           }
         case 4:
         case "end":
@@ -41755,10 +41935,10 @@ var regenerateCharts = /*#__PURE__*/function () {
             return {
               categories: [].concat(_toConsumableArray(acc.categories), [cur.title]),
               series: [].concat(_toConsumableArray(compareWithOthers ? [{
-                name: 'Média Geral',
+                name: window.getI18nMessage('charts.mediaGeral'),
                 data: [].concat(_toConsumableArray(((_acc$series$ = acc.series[0]) === null || _acc$series$ === void 0 ? void 0 : _acc$series$.data) || []), [cur.generalFormAvg.avg])
               }] : []), [{
-                name: 'Sua Nota',
+                name: window.getI18nMessage('charts.suaNota'),
                 data: [].concat(_toConsumableArray(((_acc$series = acc.series[compareWithOthers ? 1 : 0]) === null || _acc$series === void 0 ? void 0 : _acc$series.data) || []), [cur.generalUserResult])
               }])
             };
@@ -41767,7 +41947,7 @@ var regenerateCharts = /*#__PURE__*/function () {
             series: []
           });
           initPolarChart('general-chart-container', {
-            title: 'Média Geral',
+            title: window.getI18nMessage('charts.tituloGeral'),
             categories: normalizedResult.categories,
             series: normalizedResult.series
           });

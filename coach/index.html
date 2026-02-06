@@ -21,7 +21,7 @@
         </h1>
         <div class="cabecalho">
             <nav class="cabecalho_menu">
-                <button id="logout-btn">Sair</button>    
+                <button id="logout-btn"><span data-i18n="coachPage.botaoSair"></span></button>    
             </nav>
         </div>
     </header>
@@ -30,7 +30,7 @@
         <div class="main">
             <section id="first-access" class="display-none">
                 <div class="bt-container">
-                    <button id="btn-all-forms">Responder questionários</button>
+                    <button id="btn-all-forms"><span data-i18n="coachPage.questionarios"></span></button>
                 </div>
             </section>
             
@@ -38,9 +38,9 @@
                 <div class="bt-container">
                     
                     <!-- Don't change this buttons ids -->
-                    <button id="btn-form-attitude">Gestão e Decisão</button>
-                    <button id="btn-form-interpersonal_relationship">Relação Interpessoal</button>
-                    <button id="btn-form-emotional_regulation">Habilidades Psicológicas e Bem-estar</button>
+                    <button id="btn-form-attitude"><span data-i18n="coachPage.gestao"></span></button>
+                    <button id="btn-form-interpersonal_relationship"><span data-i18n="coachPage.interpessoal"></span></button>
+                    <button id="btn-form-emotional_regulation"><span data-i18n="coachPage.psicologicas"></span></button>
                 </div>
 
                 <div class="charts-filter">
@@ -48,25 +48,25 @@
                         <div>
                             <label>
                                 <input type="checkbox" name="compare" value="true" id="show-general-results-option" />
-                                Mostrar resultado geral
+                                <span data-i18n="coachPage.geral"></span>
                             </label>
                         </div>
 
                         <div id="compare-with-other-options" class="display-none">
-                            <span>Comparar apenas respostas com a mesma:</span>
+                            <span data-i18n="coachPage.comparacao"></span>
     
                             <div>
                                 <label>
                                     <input type="checkbox" name="criteria" value="experience" />
-                                    Experiência
+                                    <span data-i18n="coachPage.experiencia"></span>
                                 </label>
                                 <label>
                                     <input type="checkbox" name="criteria" value="gender" />
-                                    Genêro
+                                    <span data-i18n="coachPage.genero"></span>
                                 </label>
                                 <label>
                                     <input type="checkbox" name="criteria" value="modality" />
-                                    Modalidade
+                                    <span data-i18n="coachPage.modalidade">
                                 </label>
                             </div>
                         </div>
@@ -100,7 +100,7 @@
         <!-- <h2 class="coach-mentoria">Melhores suas habilidades aqui:</h2> -->
         
         <div class="bt-container">
-               <a class="cabecalho_link" href='/course/'>Clique aqui e entenda os resultados</a>
+               <a class="cabecalho_link" href='/course/'><span data-i18n="coachPage.resultados"></span></a>
             <!-- <button onclick="alert(getI18nMessage('coachPage.estaFuncaoEstaraDisponivelEmBreveAguarde'))">Gestão e Decisão</button>
             <button onclick="alert(getI18nMessage('coachPage.estaFuncaoEstaraDisponivelEmBreveAguarde'))">Relação Interpessoal</button>
             <button onclick="alert(getI18nMessage('coachPage.estaFuncaoEstaraDisponivelEmBreveAguarde'))">Habilidades Psicológicas e Bem-estar</button> -->
@@ -108,7 +108,9 @@
     </section>
     <footer>
         <div class="rodape">
-            <p class="center"> Modelo de Habilidades Fundamentais do Treinador | Desenvolvido por Kaio Guerrero</p>
+            <p class="center">
+                <span data-i18n="coachPage.footer"></span>
+            </p>
         </div>      
     </footer>
     
