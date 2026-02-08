@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <title>Habilidades Psicológicas e Bem-estar</title>
+    <title data-i18n="questionnairePage.tituloHabilidades"></title>
 
     <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
     
@@ -16,33 +16,37 @@
 
     <input type="hidden" id="current-form" value="emotional_regulation" />
     <header>
-        <h1>Modelo de Habilidades Fundamentais do Treinador</h1>
+        <h1>
+            <span data-i18n="questionnairePage.modeloGeral"></span>
+        </h1>
     </header>
     <div class="steps">
         <hr class="steps-divisor" />
         <div class="step attitude done">
             <div class="step-circle">
-                <span class="step-number">1</span>
+                <span class="step-number" data-i18n="questionnairePage.number1"></span>
             </div>
-            <span class="step-title">Gestão e Decisão</span>
+            <span class="step-title" data-i18n="questionnairePage.tituloAtitude"></span>
         </div>
         <div class="step interpersonal-relationship done">
             <div class="step-circle">
-                <span class="step-number">2</span>
+                <span class="step-number" data-i18n="questionnairePage.number2"></span>
             </div>
-            <span class="step-title">Relação Interpessoal</span>
+            <span class="step-title" data-i18n="questionnairePage.tituloRelacao"></span>
         </div>
         <div class="step emotional-regulation current">
             <div class="step-circle">
-                <span class="step-number">3</span>
+                <span class="step-number" data-i18n="questionnairePage.number3"></span>
             </div>
-            <span class="step-title">Habilidades Psicológicas e Bem-estar</span>
+            <span class="step-title" data-i18n="questionnairePage.tituloHabilidades"></span>
         </div>
     </div>
 
     <div class="container">
         <div class="quiz-container">
-            <h1 id="form-title" class="display-none">Habilidades Psicológicas e Bem-estar</h1>
+            <h1 id="form-title" class="display-none">
+                <span data-i18n="questionnairePage.tituloHabilidades"></span>
+            </h1>
             
             <div class="progress-bar">
                 <span></span>
@@ -52,36 +56,38 @@
             
             <ul id="question-options" class="options">
                 <li>
-                    <button data-value="1">Discordo totalmente</button>
+                    <button data-value="1"><span data-i18n="questionnairePage.likert1"></span></button>
                 </li>
                 <li>
-                    <button data-value="2">Discordo</button>
+                    <button data-value="2"><span data-i18n="questionnairePage.likert2"></span></button>
                 </li>
                 <li>
-                    <button data-value="3">Neutro</button>
+                    <button data-value="3"><span data-i18n="questionnairePage.likert3"></span></button>
                 </li>
                 <li>
-                    <button data-value="4">Concordo</button>
+                    <button data-value="4"><span data-i18n="questionnairePage.likert4"></span></button>
                 </li>
                 <li>
-                    <button data-value="5">Concordo totalmente</button>
+                    <button data-value="5"><span data-i18n="questionnairePage.likert5"></button>
                 </li>
             </ul>
 
             <div class="bt-container">
                 <div>
-                    <button id="btn-previous-form" class="display-none">Passo anterior</button>
-                    <button id="btn-previous-question" class="display-none">Pergunta anterior</button>
+                    <button id="btn-previous-form" class="display-none"><span data-i18n="questionnairePage.passoAnterior"></span></button>
+                    <button id="btn-previous-question" class="display-none"><span data-i18n="questionnairePage.perguntaAnterior"></span></button>
                 </div>
                 <div>
-                    <button id="btn-next-question" disabled>Próxima pergunta</button>
-                    <button id="btn-end-form" class="display-none">Enviar respostas</button>
+                    <button id="btn-next-question" disabled><span data-i18n="questionnairePage.proximaPergunta"></span></button>
+                    <button id="btn-end-form" disabled class="display-none"><span data-i18n="questionnairePage.enviar"></span></button>
                 </div>
             </div> 
         </div>
     </div>
     <footer>
-        <p class="center"> Modelo de Habilidades Fundamentais do Treinador | Desenvolvido por Kaio Guerrero</p>
+        <p class="center">
+            <span data-i18n="questionnairePage.footer"></span>
+        </p>
     </footer>
 
     <div id="loading" class="loading-state">

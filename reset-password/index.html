@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <title>Redefinir Senha</title>
+    <title><span data-i18n="senhaPage.tituloSenha"></span></title>
 
     <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
     
@@ -14,11 +14,13 @@
 </head>
 <body>
     <header>
-        <h1>Neurotreino</h1>
+        <h1>
+            <span data-i18n="senhaPage.modeloGeral"></span>
+        </h1>
         <div class="cabecalho">
             <nav class="cabecalho_menu">
-                <a class="cabecalho_link" href='/'>Início</a>
-                <a class="cabecalho_link" href='/login/'>Acesse sua conta</a>
+                <a class="cabecalho_link" href='/'><span data-i18n="senhaPage.botaoInicio"></span></a>
+                <a class="cabecalho_link" href='/login/'> <span data-i18n="senhaPage.botaoConta"></span></a>
             </nav>
         </div>
     </header>
@@ -26,15 +28,19 @@
         <div class="main">
             <section id="questionnaire" >
                 
-                <h1>Redefinir senha</h1>
+                <h1>
+                    <span data-i18n="senhaPage.redefinirSenha"></span>
+                </h1>
                 
                 <form id="identification-form">
-                    <label for="email">E-mail:</label>
+                    <label for="email">
+                        <span data-i18n="senhaPage.campoEmail"></span>
+                    </label>
                     <input type="email" id="email" name="email" required>
 
                     <div id="recaptcha-container"></div>
                     
-                    <button type="submit">Redefinir</button>
+                    <button type="submit"><span data-i18n="senhaPage.botaoRedefinir"></span></button>
                 </form>
                 
             </section>
@@ -42,7 +48,9 @@
     </div>
     <footer>
         <div class="rodape">
-            <p> Neurotreino | Desenvolvido por Kaio Guerrero</p>
+           <p class="center"> 
+            <span data-i18n="senhaPage.footer"></span>
+        </p>
         </div>      
     </footer>
     

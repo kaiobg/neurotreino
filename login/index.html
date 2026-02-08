@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <title>Login</title>
+    
+    <title data-i18n="loginPage.tituloLogin"></title>
 
     <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
     
@@ -14,14 +15,19 @@
 </head>
 <body>
     <header>
-        <h1>Modelo de Habilidades Fundamentais do Treinador</h1>
+        <h1>
+            <span data-i18n="loginPage.modeloGeral"></span>
+        </h1>
+        
         <div class="cabecalho">
             <nav class="cabecalho_menu">
-                <a class="cabecalho_link" href='/'>Início</a>
+                <a class="cabecalho_link" href='/'>
+                    <span data-i18n="loginPage.cabecalho1"></span>
+                </a>
                 <!-- <a class="cabecalho_link" href="/">Voltar</a> -->
-                <a class="cabecalho_link" href='/signup/'>Crie sua conta</a>
-                
-                
+                <a class="cabecalho_link" href='/signup/'>
+                    <span data-i18n="loginPage.cabecalho2"></span>
+                </a>
             </nav>
         </div>
         
@@ -31,17 +37,28 @@
         <div class="main">
             <section id="questionnaire" >
                 
-                <h1 class="center">Acesse sua conta</h1>
+                <h1 class="center">
+                    <span data-i18n="loginPage.tituloCabecalho"></span>
+                </h1>
                 
                 <form id="identification-form">
-                    <label for="email">E-mail:</label>
+                    <label for="email">
+                        <span data-i18n="loginPage.campoEmail"></span>
+                    </label>
                     <input type="email" id="email" name="email" required>
                     
-                    <label for="password">Senha:</label>
-                    <input type="password" id="senha" name="password"  placeholder="Mínimo de 6 caracteres" minlength="6" required>
+                    <label for="password">
+                        <span data-i18n="loginPage.campoSenha"></span>
+                    </label>
+                    <input type="password" id="senha" name="password"  data-i18n="loginPage.placeholderSenha"minlength="6" required>
+                     <!-- placeholder ="Mínimo de 6 caracteres"  -->
                     
-                    <a href="/reset-password/"> Esqueci minha senha</a>
-                    <button type="submit">Entrar</button>
+                    <a href="/reset-password/"> 
+                        <span data-i18n="loginPage.esqueciSenha"></span>
+                    </a>
+                    <button type="submit">
+                        <span data-i18n="loginPage.entrar"></span>
+                    </button>
                 </form>
                 
                 
@@ -50,7 +67,9 @@
     </div>
     <footer >
         <div class="rodape">
-            <p class="center"> Modelo de Habilidades Fundamentais do Treinador | Desenvolvido por Kaio Guerrero</p>
+            <p class="center"> 
+                <span data-i18n="mainPage.footer"></span>
+            </p>
         </div>      
     </footer>
     
