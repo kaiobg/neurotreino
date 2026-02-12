@@ -37830,36 +37830,64 @@ var getItemFromLanguageJson = function getItemFromLanguageJson(key) {
 window.getI18nMessage = function (key) {
   return getItemFromLanguageJson(key);
 };
-document.addEventListener('DOMContentLoaded', function () {
-  // Busca todos os elementos que possuem o atributo data-i18n
+// Transformamos a lógica em uma função que pode ser chamada a qualquer momento
+window.translatePage = function () {
   var elements = document.querySelectorAll('[data-i18n]');
   elements.forEach(function (element) {
     var key = element.getAttribute('data-i18n');
     var text = getItemFromLanguageJson(key);
     if (text) {
-      // 1. Se for um INPUT, traduz o placeholder (ex: senha)
       if (element.tagName === 'INPUT') {
         element.setAttribute('placeholder', text);
-      }
-      // 2. Se for uma IMG, traduz o src (resolve o erro do diagrama MHFT)
-      else if (element.tagName === 'IMG' || element.tagName === 'IFRAME') {
+      } else if (element.tagName === 'IMG' || element.tagName === 'IFRAME') {
         element.setAttribute('src', text);
-      }
-      // ADICIONE ESTA CONDIÇÃO PARA O LINK DO PDF
-      else if (element.tagName === 'A') {
+      } else if (element.tagName === 'A') {
         element.setAttribute('href', text);
-      }
-      // 3. Para os demais elementos (span, h2, p, etc), traduz o texto interno
-      else {
+      } else {
         element.innerHTML = text;
       }
     }
   });
+};
 
-  // Define o atributo lang da tag <html> para o idioma detectado
+// Aqui mantemos a execução automática quando a página carrega
+document.addEventListener('DOMContentLoaded', function () {
+  window.translatePage();
   var htmlElement = document.querySelector('html');
   htmlElement.setAttribute('lang', pageLanguage);
 });
+// document.addEventListener('DOMContentLoaded', function() {
+//   // Busca todos os elementos que possuem o atributo data-i18n
+//   const elements = document.querySelectorAll('[data-i18n]');
+
+//   elements.forEach((element) => {
+//     const key = element.getAttribute('data-i18n');
+//     let text = getItemFromLanguageJson(key);
+
+//     if (text) {
+//       // 1. Se for um INPUT, traduz o placeholder (ex: senha)
+//       if (element.tagName === 'INPUT') {
+//         element.setAttribute('placeholder', text);
+//       } 
+//       // 2. Se for uma IMG, traduz o src (resolve o erro do diagrama MHFT)
+//       else if (element.tagName === 'IMG'|| element.tagName === 'IFRAME') {
+//         element.setAttribute('src', text);
+//       } 
+//       // ADICIONE ESTA CONDIÇÃO PARA O LINK DO PDF
+//       else if (element.tagName === 'A') {
+//         element.setAttribute('href', text);
+//       }
+//       // 3. Para os demais elementos (span, h2, p, etc), traduz o texto interno
+//       else {
+//         element.innerHTML = text;
+//       }
+//     }
+//   });
+
+//   // Define o atributo lang da tag <html> para o idioma detectado
+//   const htmlElement = document.querySelector('html');
+//   htmlElement.setAttribute('lang', pageLanguage);
+// });
 // document.addEventListener('DOMContentLoaded', function() {
 //    // Get all page elements to be translated.
 //   const elements = document.querySelectorAll('[data-i18n]');
@@ -39426,12 +39454,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   app: () => (/* binding */ app)
 /* harmony export */ });
 /* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! firebase/app */ "./node_modules/firebase/app/dist/esm/index.esm.js");
-// Import the functions you need from the SDKs you need
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
 var firebaseConfig = {
   apiKey: "AIzaSyBDeCL2hF0kH1enhoI3gk_hvuKkUMh-Vo4",
   authDomain: "ptpt-3ce02.firebaseapp.com",
@@ -39440,10 +39463,23 @@ var firebaseConfig = {
   messagingSenderId: "128277472240",
   appId: "1:128277472240:web:b21413cfb6c17da546f335"
 };
-
-// Initialize Firebase
 var app = (0,firebase_app__WEBPACK_IMPORTED_MODULE_0__.initializeApp)(firebaseConfig);
 
+
+// import { initializeApp } from 'firebase/app';
+
+// const firebaseConfig = {
+//   apiKey: 'AIzaSyDgJtU-Iw5S4vZCPGjOh6gWVuZd-tO18qE',
+//   authDomain: 'pubus-status-beb24.firebaseapp.com',
+//   projectId: 'pubus-status-beb24',
+//   storageBucket: 'pubus-status-beb24.firebasestorage.app',
+//   messagingSenderId: '80545180616',
+//   appId: '1:80545180616:web:607ad610d4e4392d3aaefd',
+// };
+
+// const app = initializeApp(firebaseConfig);
+
+// export { app };
 
 /***/ }),
 
@@ -41565,7 +41601,10 @@ _services__WEBPACK_IMPORTED_MODULE_3__.firebaseService.auth.addAuthStateListener
           }
           checkIfIsLoggedIn = false;
           _utils__WEBPACK_IMPORTED_MODULE_4__.utils.hideLoading();
-        case 3:
+          if (window.translatePage) {
+            window.translatePage();
+          }
+        case 4:
         case "end":
           return _context2.stop();
       }
